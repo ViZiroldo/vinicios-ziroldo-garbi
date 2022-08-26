@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Portfólio Vinicios Ziroldo Garbi</title>
+    <style>:root{
+        --body-bg: #f1b13923;
+        --primary-bg: #a06ef1;
+        --primary-bg2: #b890f7;
+        --secundary-bg: #dedede;
+        --text-color: black;
+        --text-color2: white;
+        --box: #a06ef1, #a06ef1, #fff, #a06ef1, #a06ef1, #fff, #a06ef1,
+        #a06ef1, #fff, #a06ef1, #a06ef1, #fff, #a06ef1, #a06ef1;
+        --linha: #a06ef1;
+      }
+      :root .dark-mode{
+        --body-bg: #212529;
+        --primary-bg: #e20a6f;
+        --primary-bg2: #e73186;
+        --secundary-bg: #212529;
+        --text-color: white;
+        --text-color2: black;
+        --box: #e20a6f, #e20a6f, #212529, #e20a6f, #e20a6f, #212529, #e20a6f,
+        #e20a6f, #212529, #e20a6f, #e20a6f, #212529, #e20a6f, #e20a6f;
+        --linha:#e20a6f;
+      }
+      body {
+        background-color: var(--body-bg);
+        width: auto;
+        height: 110vh;
+      }
+      @keyframes border {
+        0%, 100% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 300%;
+        }
+      }
+      .theme{
+        background-color: var(--primary-bg);
+      }
+      .offcanvas{
+        background-color: var(--primary-bg2);
+      }
+      .itens-bg{
+        background-color: var(--itens-bg);
+      }
+      .grayscale{
+        background-color: var(--secundary-bg);
+      }
+      .text-color{
+        color: var(--text-color);
+      }
+      .text-color-preto{
+        color: black;
+      }
+      .text-color-branco{
+        color: white;
+      }
+      .text-color-inverse{
+        color: var(--text-color2);
+      }
+      .box::before,
+      .box::after {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        width: calc(100% + 26px);
+        height: calc(100% + 26px);
+        top: -12px;
+        left: -12px;
+        border-radius: 5px;
+        background: linear-gradient(45deg,
+            var(--box)
+      );
+        background-size: 300%;
+        animation: border 12s linear infinite;
+      }
+      .box::after {
+        filter: blur(5px);
+      }
+      .gradient-custom {
+        background: var(--primary-bg2);
+      
+        background: -webkit-linear-gradient(to right, var(--primary-bg), var(--primary-bg2));
+      
+        background: linear-gradient(to right, var(--primary-bg), var(--primary-bg2))
+        }
+        .gradient-custom-4 {
+        background: var(--primary-bg2);
+      
+        background: -webkit-linear-gradient(to left, var(--primary-bg), var(--primary-bg2));
+      
+        background: linear-gradient(to left, var(--primary-bg), var(--primary-bg2))
+        }
+      /* NAV BAR */
+      .icon-theme{
+        width: 50%;
+      }
+      .switch-theme{
+        margin-left: 80%;
+      }
+      .form-check-input:checked {
+        background-color: #212529;
+        border-color: #212529;
+      }
+      /* NAV BAR */
+      /* ABOUT ME */
+      #about-me {
+        width: 100%;
+        height: 100%;
+      }
+      #title-about-me {
+        position: absolute;
+        left: 43%;
+        top: 15%;
+        text-align: center;
+      }
+      .card-about-me {
+        position: absolute;
+        left: 37%;
+        top: 25%;
+        width: 30rem;
+      }
+      .img {
+        width: 430px;
+      }
+      .me {
+        position: absolute;
+        left: 40%;
+        width: 400px;
+        text-align: justify;
+      }
+      .curriculo {
+        position: absolute;
+        left: 0%;
+        top: 45%;
+      }
+      .whatsapp {
+        position: absolute;
+        left: 0%;
+        top: 55%;
+      }
+      .git {
+        position: absolute;
+        right: 0%;
+        top: 45%;
+      }
+      .linkedin {
+        position: absolute;
+        right: 0%;
+        top: 55%;
+      }
+      .linha-vertical-0 {
+        position: absolute;
+        left: 0%;
+        top: 5%;
+        height: 310px;
+        width: 20px;
+        border-right: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-1 {
+        position: absolute;
+        left: 0%;
+        top: 5%;
+        height: 310px;
+        width: 40px;
+        border-right: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-2 {
+        position: absolute;
+        left: 0%;
+        top: 38.5%;
+        height: 5px;
+        width: 20px;
+        border-right: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-3 {
+        position: absolute;
+        left: 0%;
+        top: 38.5%;
+        height: 5px;
+        width: 40px;
+        border-right: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-4 {
+        position: absolute;
+        left: 0%;
+        top: 39.5%;
+        height: 2px;
+        width: 20px;
+        border-right: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-5 {
+        position: absolute;
+        left: 0%;
+        top: 39.5%;
+        height: 2px;
+        width: 40px;
+        border-right: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-6 {
+        position: absolute;
+        right: 0%;
+        top: 5%;
+        height: 310px;
+        width: 20px;
+        border-left: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-7 {
+        position: absolute;
+        right: 0%;
+        top: 5%;
+        height: 310px;
+        width: 40px;
+        border-left: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-8 {
+        position: absolute;
+        right: 0%;
+        top: 38.5%;
+        height: 5px;
+        width: 20px;
+        border-left: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-9 {
+        position: absolute;
+        right: 0%;
+        top: 38.5%;
+        height: 5px;
+        width: 40px;
+        border-left: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-10 {
+        position: absolute;
+        right: 0%;
+        top: 39.5%;
+        height: 2px;
+        width: 20px;
+        border-left: 2px solid var(--primary-bg);
+      }
+      .linha-vertical-11 {
+        position: absolute;
+        right: 0%;
+        top: 39.5%;
+        height: 2px;
+        width: 40px;
+        border-left: 2px solid var(--primary-bg);
+      }
+      .arrow-down {
+        position: absolute;
+        right: 0.9%;
+        top: 70%;
+        width: 30px;
+        height: 200px;
+      }
+      .arrow {
+        position: absolute;
+        right: 0%;
+        top: 66.5%;
+      }
+      .scrolldown {
+        width: 120px;
+        position: absolute;
+        left: -152.5%;
+        top: 29.5%;
+        font-family: sans-serif;
+        font-size: 14px;
+        transform: rotate(-90deg);
+        color: var(--primary-bg);
+      }
+      /* ABOUT ME */
+      /* TIME-LINE */
+      #timeline {
+        width: 100%;
+        height: 180vh;
+      }
+      #title-timeline {
+        position: absolute;
+        top: 125%;
+        left: 45%;
+      }
+      .main-timeline-4 {
+        position: relative;
+        top: 300px;
+        }
+        .main-timeline-4::after {
+        content: '';
+        position: absolute;
+        width: 3px;
+        background-color:  var(--text-color);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        }
+        .timeline-4 {
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+        }
+        .timeline-4::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -11px;
+        background-color: var(--text-color);
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+        }
+        .left-4 {
+        padding: 0px 40px 20px 0px;
+        left: 0;
+        }
+        .right-4 {
+        padding: 0px 0px 20px 40px;
+        left: 50%;
+        }
+        .left-4::before {
+        content: " ";
+        position: absolute;
+        top: 18px;
+        z-index: 1;
+        right: 30px;
+        border: medium solid var(--primary-bg);
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent var(--primary-bg);
+        }
+        .right-4::before {
+        content: " ";
+        position: absolute;
+        top: 18px;
+        z-index: 1;
+        left: 30px;
+        border: medium solid var(--primary-bg);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--primary-bg) transparent transparent;
+        }
+        .right-4::after {
+        left: -14px;
+        }
+      /* SKILLS */
+      #skills {
+        width: 100%;
+        height: 80vh;
+      }
+      .card-skills {
+        background-color: var(--primary-bg);
+        max-width: 600px;
+        height: 350px;
+        position: relative;
+        top: 300px;
+      }
+      .card-title {
+        text-align: center;
+      }
+      #title-skills {
+        text-align: center;
+        position: absolute;
+        top: 290%;
+        left: 50%;
+      }
+      /* SKILLS */
+      /* PROJETOS */
+      #projetos {
+        width: 100%;
+        height: 132vh;
+      }
+      #title-projetos {
+        position: relative;
+        margin-top: 70px;
+        text-align: center;
+      }
+      .card-projetos {
+        position: relative;
+        left: 25%;
+        top: 10%;
+        max-width: 50%;
+      }
+      a {
+        text-decoration: none;
+      }
+      .card-icons {
+        padding-left: 20px;
+        max-width: 150px;
+      }
+      /* PROJETOS */
+      /* FOOTER */
+      .footer{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0%;
+        bottom: -420%;
+        text-align: center;
+      }
+      .img {
+        border-radius: 50%;
+        width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .position {
+        position: absolute;
+        bottom: 5%;
+      }
+      /* FOOTER */
+
+      @media screen and (max-width: 600px) {
+
+        .main-timeline-4::after {
+        left: 31px;
+        }
+
+        .timeline-4 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        }
+
+        .timeline-4::before {
+        left: 60px;
+        border: medium solid var(--text-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--text-color) transparent transparent;
+        }
+
+        .left-4::after,
+        .right-4::after {
+        left: 18px;
+        }
+
+        .left-4::before {
+        right: auto;
+        }
+
+        .right-4 {
+        left: 0%;
+        }
+      }
+      </style>
+</head>
+<body>
+<section id="navbar">
+  <nav class="navbar fixed-top gradient-custom-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h5>Vinicios Ziroldo Garbi</h5></a>
+      <div class="form-check form-switch switch-theme">
+        <input class="form-check-input" type="checkbox" role="switch" id="checkbox" onclick="toggle()">
+        <label class="form-check-label" for="checkbox">Dark Mode</label>
+      </div>
+    </div>
+  </nav>
+</section>  
+<section id="about-me">
+  <div id="title-about-me">
+    <h2 class="text-color title">Seja Bem-Vindo!</h2>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-about-me box">
+        <img src="assets/about-me.jpeg"  class="img-card" alt="Vinicios Ziroldo Garbi">
+        <div class="card-body">
+          <p class="card-text text-color-preto">Olá, eu me chamo Vinicios.</p>
+        <p class="card-text text-color-preto">Sou desenvolvedor Full Stack.</p>
+        <p class="card-text text-color-preto">Entrei na área a 1 ano e meio e foi amor a primeira vista!</p>
+        <p class="card-text text-color-preto">Amo assistir E-Sports, fazer meus projetos de estudos, fazer um churras com os amigos e jogar gameboard e sair em familia com minha esposa e nossos 2 filhos de quatro patas.</p>
+        <p class="card-text text-color-preto">Ah... e esse ai é o Akamaru meu caçula! 🐶🥰</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="left">
+      <a href="Curriculo Vinicios Ziroldo Garbi.pdf" download><img src="assets/curriculo.png" class="curriculo" alt="curriculo"></a>
+      <a href="https://api.whatsapp.com/send?phone=5511998030278&text" target="_blank"><img src="assets/whats.png" class="whatsapp" alt="whatsapp"></a>
+      <div class="linha-vertical-0"></div>
+      <div class="linha-vertical-1"></div>
+      <div class="linha-vertical-2"></div>
+      <div class="linha-vertical-3"></div>
+      <div class="linha-vertical-4"></div>
+      <div class="linha-vertical-5"></div>
+    </div>
+    <div class="right">
+      <a href="https://github.com/ViZiroldo" target="_blank"><img src="assets/git.png" class="git" alt="github"></a>
+      <a href="https://www.linkedin.com/in/vinicios-ziroldo-garbi/" target="_blank"><img src="assets/linkedin.png" class="linkedin" alt="linkedin"></a>
+      <div class="linha-vertical-6"></div>
+      <div class="linha-vertical-7"></div>
+      <div class="linha-vertical-8"></div>
+      <div class="linha-vertical-9"></div>
+      <div class="linha-vertical-10"></div>
+      <div class="linha-vertical-11"></div>
+    </div>
+    <div class="arrow-down">
+      <img src="assets/arrow.png" class="arrow" alt="arrow">
+      <span class="scrolldown"><b>Rolar para baixo</b></span>
+    </div>
+  </div>
+</section>
+      
+<section id="timeline">
+  <div id="title-timeline">
+    <h2 class="text-color title">Time-line</h2>
+  </div>
+  <div class="container py-5">
+    <div class="main-timeline-4 text-white">
+      <div class="timeline-4 left-4">
+        <div class="card gradient-custom">
+          <div class="card-body p-4">
+            <i class="fas fa-brain fa-2x mb-3"></i>
+            <h4 class="text-color-preto">e-Construmarket</h4>
+            <p class="small text-color-preto mb-4">07/2021 - atual</p>
+            <p><b>Desenvolvedor .Net Jr</b></p>
+            <p>Atuação em bugs, atuação em features desenvolvendo melhorias, deploy tanto para o ambiente de HML quanto para o ambiente de PROD.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-4 right-4">
+        <div class="card gradient-custom-4">
+          <div class="card-body p-4">
+            <i class="fas fa-camera fa-2x mb-3"></i>
+            <h4 class="text-color-preto">JUNIX</h4>
+            <p class="small text-color-preto mb-4">09/2019 - 07/2021</p>
+            <p><b>Suporte I e Suporte II</b></p>
+            <p>Iniciando como suporte, atendendo chamados e dando suporte ao cliente pela plataforma ou presencial.</p>
+            <p>Treinamentos presencial da utilização do produto aos clientes.</p>
+            <p><b>Desenvolvedor I</b></p>
+            <p>Atuando em Bugs via SQL Server e .Net MVC.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-4 left-4">
+        <div class="card gradient-custom">
+          <div class="card-body p-4">
+            <i class="fas fa-campground fa-2x mb-3"></i>
+            <h4 class="text-color-preto">Faculdade Impacta</h4>
+            <p class="small text-color-preto mb-4">06/2017 - 06/2019</p>
+            <p>Formação em Analise e desenvolvimento de sistemas (Bacharelado)</p>
+            <p>Formação em Fundamentos de C# (Curso)</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-4 right-4">
+        <div class="card gradient-custom-4">
+          <div class="card-body p-4">
+            <i class="fas fa-sun fa-2x mb-3"></i>
+            <h4 class="text-color-preto">VibroLife</h4>
+            <p class="small text-color-preto mb-4">03/2015 - 09/2019</p>
+            <p><b>Assistente adminstrativo</b></p>
+            <p>Cuidar das correspondências, emitir notas fiscais, emitir pedido, dar entrar no estoque, dar saida no estoque, manter arquivos e cadastros atualizados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      
+      
+<section id="skills">
+  <div id="title-skills">
+    <h2 class="text-color">Skills</h2>
+  </div>
+  <div class="row justify-content-center" style="width: 100%;">
+    <div class="col-sm-4" style=" max-width: 500px;">
+      <div class="card card-skills gradient-custom-4">
+        <div class="card-body">
+          <h5 class="card-title">Front-End</h5>
+          <br>
+          <table class="table table-borderless" style="text-align: left;">
+            <tbody>
+              <tr>
+                <td class="text-color-branco">HTML</td>
+                <td class="text-color-branco">JavaScript</td>
+                <td class="text-color-branco">Angular TS</td>
+              </tr>
+              <tr>
+                <td class="text-color-branco">Jquery</td>
+                <td class="text-color-branco">CSS</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4" style=" max-width: 500px;">
+      <div class="card card-skills gradient-custom-4">
+        <div class="card-body">
+          <h5 class="card-title">Back-End</h5>
+          <br>
+          <table class="table table-borderless" style="text-align: left;">
+            <tbody>
+              <tr>
+                <td class="text-color-branco">.NET CORE</td>
+                <td class="text-color-branco">C#</td>
+                <td class="text-color-branco">SQL Server</td>
+              </tr>
+              <tr>
+                <td class="text-color-branco">ASP Classic</td>
+                <td class="text-color-branco">Entity FrameWork</td>
+                <td class="text-color-branco">Json Web Token</td>
+              </tr>
+              <tr>
+                <td class="text-color-branco">Identity</td>
+                <td class="text-color-branco">Linq</td>
+                <td class="text-color-branco">.NET MVC</td>
+              </tr>
+              <tr>
+                <td class="text-color-branco">Lambda</td>
+                <td class="text-color-branco">AutoMaper</td>
+                <td class="text-color-branco">DDD</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4" style=" max-width: 500px;">
+      <div class="card card-skills gradient-custom-4">
+        <div class="card-body">
+          <h5 class="card-title">DevOps</h5>
+          <br>
+          <table class="table table-borderless" style="text-align: left;">
+            <tbody>
+              <tr>
+                <td class="text-color-branco">Scrum</td>
+                <td class="text-color-branco">Kanban</td>
+                <td class="text-color-branco">Azure</td>
+              </tr>
+              <tr>
+                <td class="text-color-branco">Git</td>
+                <td class="text-color-branco">TFS</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+<section id="projetos">
+  <div>
+    <div id="title-projetos">
+      <h2 class="text-color title">Projetos</h2>
+    </div>
+  </div>
+  <div class="card card-projetos gradient-custom-4 mb-3">
+    <img src="assets/tm.jpeg" class="img-fluid rounded-start" alt="Tournament Manager">
+    <div class="card-body ">
+      <h5 class="card-title text-color-preto">Tournament Manager</h5>
+      <br>
+      <p class="card-text text-color-branco">Este projeto sera um sistema de gerenciamento de torneios.</p>
+      <p class="card-text text-color-branco">Onde o usuario contratante, consegue informar todas as informações do torneio como por exemplo: nome, valor de premiação, data de inicio, data de encerramento, quantidade de times, e o estilo que vai ocorrer o torneio.</p>
+      <p class="card-text text-color-branco">E os usuarios casuais vão poder visualizar as informações do andamento do torneio.</p>
+      <p class="card-text"><small class="card-text text-color-branco">Sistema em construção! ⚠️</small></p>
+      <br>
+      <div class="row justify-content-center">
+          <div class="col-sm-3">
+            <a href="https://github.com/ViZiroldo/TournamentManager_ApiCore" target="_blank"> 
+              <div class="card-icons" >
+                <div class="card-body">
+                  <img src="assets/vscode.png">
+                </div>
+                <div class="card-body" >
+                    <span class="text-color-preto" style="position: relative;">Repositório Front-End</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a href="https://github.com/ViZiroldo/TournamentManager_ApiCore" target="_blank">
+              <div class="card-icons">
+                <div class="card-body" >
+                  <img src="assets/vs.png">
+                </div>
+                <div class="card-body" >
+                    <span class="text-color-preto" style="position: relative;">Repositório Back-End</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-3">
+            <a target="_blank">
+              <div class="card-icons">
+                <div class="card-body" >
+                  <img src="assets/browse.png">
+                </div>
+                <div class="card-body">
+                  <span class="text-color-preto" style="position: relative;">Acesso ao Sistema</span>
+                </div>
+              </div>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+      
+      
+      
+      <div class="footer gradient-custom-4">
+        <footer class="d-flex py-3 my-4" style="text-align:center">
+          <ul class="nav col-md-3 px-2">
+            <div class="position">
+              <li class="nav-item"><img src="assets/vinicios-footer.jpg" class="img"></li>
+            </div>
+      
+          </ul>
+      
+          <ul class="nav col-md-6 justify-content-center">
+            <h6 class="size text-color-preto">“Não é o mais forte que sobrevive, nem o mais inteligente. Quem sobrevive é o mais disposto à mudança!” – Charles Darwin.</h6>
+          </ul>
+          <ul class="nav icons col-md-3 justify-content-center">
+            <li class="nav-item"><a href="https://github.com/ViZiroldo" target="_blank" class="nav-link px-2 text-color-preto"><img src="assets/github-foolder.png"></a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/vinicios-ziroldo-garbi/" target="_blank" class="nav-link px-2 text-color-preto"><img src="assets/linkedin-foolder.png"></a></li>
+            <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=5511998030278&text" target="_blank" class="nav-link px-2 text-color-preto"><img src="assets/whats-foolder.png"></a></li>
+            <li class="nav-item"><a href="mailto:ziroldovi@gmail.com" class="nav-link px-2 text-color-preto" target="_blank" ><img src="assets/email-foolder.png"></a></li>
+          </ul>
+        </footer>
+      </div>
+      
+<script>
+    if(localStorage.getItem('theme') == 'dark')
+    {
+        toggle();
+
+        if (document.getElementById('checkbox').checked) {
+            localStorage.setItem('checked', true)
+        }
+    }
+
+    function toggle(){
+        let isDark = document.body.classList.toggle('dark-mode');
+
+        if (isDark){
+          toggle.checked = true;
+          localStorage.setItem('theme', 'dark');
+          document.getElementById('checkbox').setAttribute('checked', 'checked');
+        }
+        else {
+          toggle.checked = true;
+          localStorage.removeItem('theme', 'dark');
+        }
+    }
+</script>      
+<!-- JavaScript Bundle with Popper -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
