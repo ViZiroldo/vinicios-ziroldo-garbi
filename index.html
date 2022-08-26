@@ -16,16 +16,20 @@
   <nav class="navbar fixed-top gradient-custom-4">
     <div class="container-fluid">
       <a class="navbar-brand font-size-titles" href="#"><h5 class="font-size-titles">Vinicios Ziroldo Garbi</h5></a>
-      <div class="form-check form-switch switch-theme">
+      <!-- <div class="form-check form-switch ">
         <input class="form-check-input" type="checkbox" role="switch" id="checkbox" onclick="toggle()">
-        <label class="form-check-label font-size-texts text-theme" for="checkbox">Dark Mode</label>
+        <label class="form-check-label font-size-texts" for="checkbox">Dark Mode</label>
+      </div> -->
+      <div class="form-check form-switch form-check-reverse switch-theme">
+        <input class="form-check-input" type="checkbox" id="checkbox" onclick="toggle()">
+        <label class="form-check-label font-size-texts dark-mode-text" for="checkbox">Dark Mode</label>
       </div>
     </div>
   </nav>
 </section>  
 <section id="about-me">
   <div id="title-about-me">
-    <h2 class="text-color title font-size-titles">Seja Bem-Vindo!</h2>
+    <h2 class="text-color title font-size-titles">Seja Bem-Vindo(a)!</h2>
   </div>
   <div class="row">
     <div class="col-sm-12">
@@ -131,8 +135,8 @@
   <div id="title-skills">
     <h2 class="text-color font-size-titles">Skills</h2>
   </div>
-  <div class="row justify-content-center" style="width: 100%;">
-    <div class="col-sm-4" style=" max-width: 500px;">
+  <div class="row justify-content-center">
+    <div class="col-md-3 div-skills">
       <div class="card card-skills gradient-custom-4">
         <div class="card-body">
           <h5 class="card-title font-size-titles">Front-End</h5>
@@ -153,7 +157,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-4" style=" max-width: 500px;">
+    <div class="col-md-3 div-skills">
       <div class="card card-skills gradient-custom-4">
         <div class="card-body">
           <h5 class="card-title font-size-titles">Back-End</h5>
@@ -185,7 +189,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-4" style=" max-width: 500px;">
+    <div class="col-md-3 div-skills">
       <div class="card card-skills gradient-custom-4">
         <div class="card-body">
           <h5 class="card-title font-size-titles">DevOps</h5>
