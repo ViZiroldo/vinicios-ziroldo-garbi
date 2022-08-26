@@ -1,0 +1,762 @@
+:root{
+    --body-bg: #f1b13923;
+    --primary-bg: #a06ef1;
+    --primary-bg2: #b890f7;
+    --secundary-bg: #dedede;
+    --text-color: black;
+    --text-color2: white;
+    --box: #a06ef1, #a06ef1, #fff, #a06ef1, #a06ef1, #fff, #a06ef1,
+    #a06ef1, #fff, #a06ef1, #a06ef1, #fff, #a06ef1, #a06ef1;
+    --linha: #a06ef1;
+  }
+  :root .dark-mode{
+    --body-bg: #212529;
+    --primary-bg: #e20a6f;
+    --primary-bg2: #e73186;
+    --secundary-bg: #212529;
+    --text-color: white;
+    --text-color2: black;
+    --box: #e20a6f, #e20a6f, #212529, #e20a6f, #e20a6f, #212529, #e20a6f,
+    #e20a6f, #212529, #e20a6f, #e20a6f, #212529, #e20a6f, #e20a6f;
+    --linha:#e20a6f;
+  }
+  body {
+    background-color: var(--body-bg);
+    width: auto;
+    height: 110vh;
+  }
+  @keyframes border {
+    0%, 100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300%;
+    }
+  }
+  .theme{
+    background-color: var(--primary-bg);
+  }
+  .offcanvas{
+    background-color: var(--primary-bg2);
+  }
+  .itens-bg{
+    background-color: var(--itens-bg);
+  }
+  .grayscale{
+    background-color: var(--secundary-bg);
+  }
+  .text-color{
+    color: var(--text-color);
+  }
+  .text-color-preto{
+    color: black;
+  }
+  .text-color-branco{
+    color: white;
+  }
+  .text-color-inverse{
+    color: var(--text-color2);
+  }
+  .box::before,
+  .box::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 26px);
+    height: calc(100% + 26px);
+    top: -12px;
+    left: -12px;
+    border-radius: 5px;
+    background: linear-gradient(45deg,
+        var(--box)
+  );
+    background-size: 300%;
+    animation: border 12s linear infinite;
+  }
+  .box::after {
+    filter: blur(5px);
+  }
+  .gradient-custom {
+    background: var(--primary-bg2);
+  
+    background: -webkit-linear-gradient(to right, var(--primary-bg), var(--primary-bg2));
+  
+    background: linear-gradient(to right, var(--primary-bg), var(--primary-bg2))
+    }
+    .gradient-custom-4 {
+    background: var(--primary-bg2);
+  
+    background: -webkit-linear-gradient(to left, var(--primary-bg), var(--primary-bg2));
+  
+    background: linear-gradient(to left, var(--primary-bg), var(--primary-bg2))
+    }
+  /* NAV BAR */
+  .icon-theme{
+    width: 50%;
+  }
+  .switch-theme{
+    margin-left: 80%;
+  }
+  .form-check-input:checked {
+    background-color: #212529;
+    border-color: #212529;
+  }
+  /* NAV BAR */
+  /* ABOUT ME */
+  #about-me {
+    width: 100%;
+    height: 100%;
+  }
+  #title-about-me {
+    position: absolute;
+    left: 43%;
+    top: 15%;
+    text-align: center;
+  }
+  .card-about-me {
+    position: absolute;
+    left: 37%;
+    top: 25%;
+    width: 30rem;
+  }
+  .img {
+    width: 430px;
+  }
+  .me {
+    position: absolute;
+    left: 40%;
+    width: 400px;
+    text-align: justify;
+  }
+  .curriculo {
+    position: absolute;
+    left: 0%;
+    top: 45%;
+  }
+  .whatsapp {
+    position: absolute;
+    left: 0%;
+    top: 55%;
+  }
+  .git {
+    position: absolute;
+    right: 0%;
+    top: 45%;
+  }
+  .linkedin {
+    position: absolute;
+    right: 0%;
+    top: 55%;
+  }
+  .linha-vertical-0 {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    height: 310px;
+    width: 20px;
+    border-right: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-1 {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    height: 310px;
+    width: 40px;
+    border-right: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-2 {
+    position: absolute;
+    left: 0%;
+    top: 38.5%;
+    height: 5px;
+    width: 20px;
+    border-right: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-3 {
+    position: absolute;
+    left: 0%;
+    top: 38.5%;
+    height: 5px;
+    width: 40px;
+    border-right: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-4 {
+    position: absolute;
+    left: 0%;
+    top: 39.5%;
+    height: 2px;
+    width: 20px;
+    border-right: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-5 {
+    position: absolute;
+    left: 0%;
+    top: 39.5%;
+    height: 2px;
+    width: 40px;
+    border-right: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-6 {
+    position: absolute;
+    right: 0%;
+    top: 5%;
+    height: 310px;
+    width: 20px;
+    border-left: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-7 {
+    position: absolute;
+    right: 0%;
+    top: 5%;
+    height: 310px;
+    width: 40px;
+    border-left: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-8 {
+    position: absolute;
+    right: 0%;
+    top: 38.5%;
+    height: 5px;
+    width: 20px;
+    border-left: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-9 {
+    position: absolute;
+    right: 0%;
+    top: 38.5%;
+    height: 5px;
+    width: 40px;
+    border-left: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-10 {
+    position: absolute;
+    right: 0%;
+    top: 39.5%;
+    height: 2px;
+    width: 20px;
+    border-left: 2px solid var(--primary-bg);
+  }
+  .linha-vertical-11 {
+    position: absolute;
+    right: 0%;
+    top: 39.5%;
+    height: 2px;
+    width: 40px;
+    border-left: 2px solid var(--primary-bg);
+  }
+  .arrow-down {
+    position: absolute;
+    right: 0.9%;
+    top: 70%;
+    width: 30px;
+    height: 200px;
+  }
+  .arrow {
+    position: absolute;
+    right: 0%;
+    top: 66.5%;
+  }
+  .scrolldown {
+    width: 120px;
+    position: absolute;
+    left: -152.5%;
+    top: 29.5%;
+    font-family: sans-serif;
+    font-size: 14px;
+    transform: rotate(-90deg);
+    color: var(--primary-bg);
+  }
+  /* ABOUT ME */
+  /* TIME-LINE */
+  #timeline {
+    width: 100%;
+    height: 180vh;
+  }
+  #title-timeline {
+    position: absolute;
+    top: 125%;
+    left: 45%;
+  }
+  .main-timeline-4 {
+    position: relative;
+    top: 300px;
+    }
+    .main-timeline-4::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color:  var(--text-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    }
+    .timeline-4 {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    }
+    .timeline-4::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -11px;
+    background-color: var(--text-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    }
+    .left-4 {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+    }
+    .right-4 {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+    }
+    .left-4::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--primary-bg);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--primary-bg);
+    }
+    .right-4::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid var(--primary-bg);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--primary-bg) transparent transparent;
+    }
+    .right-4::after {
+    left: -14px;
+    }
+  /* SKILLS */
+  #skills {
+    width: 100%;
+    height: 80vh;
+  }
+  .card-skills {
+    background-color: var(--primary-bg);
+    max-width: 600px;
+    height: 350px;
+    position: relative;
+    top: 300px;
+  }
+  .card-title {
+    text-align: center;
+  }
+  #title-skills {
+    text-align: center;
+    position: absolute;
+    top: 290%;
+    left: 50%;
+  }
+  /* SKILLS */
+  /* PROJETOS */
+  #projetos {
+    width: 100%;
+    height: 132vh;
+  }
+  #title-projetos {
+    position: relative;
+    margin-top: 70px;
+    text-align: center;
+  }
+  .card-projetos {
+    position: relative;
+    left: 25%;
+    top: 10%;
+    max-width: 50%;
+  }
+  a {
+    text-decoration: none;
+  }
+  .card-icons {
+    padding-left: 20px;
+    max-width: 150px;
+  }
+  /* PROJETOS */
+  /* FOOTER */
+  .footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0%;
+    bottom: -420%;
+    text-align: center;
+  }
+  .img {
+    border-radius: 50%;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .position {
+    position: absolute;
+    bottom: 5%;
+  }
+  /* FOOTER */
+
+  @media screen and (max-width: 600px) {
+
+    .main-timeline-4::after {
+    left: 31px;
+    }
+
+    .timeline-4 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+
+    .timeline-4::before {
+    left: 60px;
+    border: medium solid var(--text-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--text-color) transparent transparent;
+    }
+
+    .left-4::after,
+    .right-4::after {
+    left: 18px;
+    }
+
+    .left-4::before {
+    right: auto;
+    }
+
+    .right-4 {
+    left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    body {
+        background-color: var(--body-bg);
+        width: 360px;
+        height: auto;
+      }
+    /* NAV BAR */
+  .switch-theme{
+    position: absolute;
+    left: -3%;
+    top: 15%;
+    margin-left: none;
+  }
+  .text-theme {
+    position: absolute;
+    left: -5%;
+    top: 90%;
+  }
+  .font-size-titles {
+    font-size: 11px;
+  }
+  .font-size-texts {
+    font-size: 7px;
+  }
+  /* NAV BAR */
+  /* ABOUT ME */
+  #about-me {
+    width: 100%;
+    height: 100%;
+  }
+  #title-about-me {
+    position: absolute;
+    left: 38%;
+    top: 10%;
+    text-align: center;
+  }
+  .card-about-me {
+    position: absolute;
+    left: 12%;
+    top: 17%;
+    width: 15rem;
+  }
+  .img {
+    width: 430px;
+  }
+  .me {
+    position: absolute;
+    left: 40%;
+    width: 400px;
+    text-align: justify;
+  }
+  .curriculo {
+    position: absolute;
+    left: 0%;
+    top: 42%;
+    width: 1.9rem;
+  }
+  .whatsapp {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 1.8rem;
+  }
+  .git {
+    position: absolute;
+    right: 0%;
+    top: 42%;
+    width: 1.8rem;
+  }
+  .linkedin {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    width: 1.8rem;
+  }
+  .linha-vertical-0 {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    height: 200px;
+    width: 10px;
+    border-right: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-1 {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    height: 200px;
+    width: 20px;
+    border-right: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-2 {
+    position: absolute;
+    left: 0%;
+    top: 37.0%;
+    height: 5px;
+    width: 10px;
+    border-right: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-3 {
+    position: absolute;
+    left: 0%;
+    top: 37.0%;
+    height: 5px;
+    width: 20px;
+    border-right: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-4 {
+    position: absolute;
+    left: 0%;
+    top: 38.5%;
+    height: 2px;
+    width: 10px;
+    border-right: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-5 {
+    position: absolute;
+    left: 0%;
+    top: 38.5%;
+    height: 2px;
+    width: 20px;
+    border-right: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-6 {
+    position: absolute;
+    right: 0%;
+    top: 5%;
+    height: 200px;
+    width: 10px;
+    border-left: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-7 {
+    position: absolute;
+    right: 0%;
+    top: 5%;
+    height: 200px;
+    width: 20px;
+    border-left: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-8 {
+    position: absolute;
+    right: 0%;
+    top: 37.0%;
+    height: 5px;
+    width: 10px;
+    border-left: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-9 {
+    position: absolute;
+    right: 0%;
+    top: 37.0%;
+    height: 5px;
+    width: 20px;
+    border-left: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-10 {
+    position: absolute;
+    right: 0%;
+    top: 38.5%;
+    height: 2px;
+    width: 10px;
+    border-left: 1px solid var(--primary-bg);
+  }
+  .linha-vertical-11 {
+    position: absolute;
+    right: 0%;
+    top: 38.5%;
+    height: 2px;
+    width: 20px;
+    border-left: 1px solid var(--primary-bg);
+  }
+  .arrow-down {
+    position: absolute;
+    right: 0%;
+    top: 60%;
+    width: 30px;
+    height: 200px;
+  }
+  .arrow {
+    position: absolute;
+    right: 0%;
+    top: 66.5%;
+  }
+  .scrolldown {
+    width: 120px;
+    position: absolute;
+    left: -152.5%;
+    top: 29.5%;
+    font-family: sans-serif;
+    font-size: 14px;
+    transform: rotate(-90deg);
+    color: var(--primary-bg);
+  }
+  /* ABOUT ME */
+  /* TIME-LINE */
+  #title-timeline {
+    position: absolute;
+    top: 100%;
+    left: 45%;
+  }
+  .main-timeline-4 {
+    position: relative;
+    top: 600px;
+    }
+  .main-timeline-4::after {
+    left: 31px;
+    }
+
+    .timeline-4 {
+    width: 90%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+
+    .timeline-4::before {
+    left: 60px;
+    border: medium solid var(--text-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--text-color) transparent transparent;
+    }
+
+    .left-4::after,
+    .right-4::after {
+    left: 17px;
+    }
+
+    .left-4::before {
+    right: auto;
+    }
+
+    .right-4 {
+    left: 0%;
+    }
+  /* SKILLS */
+  #skills {
+    width: 100%;
+    height: 80vh;
+  }
+  .card-skills {
+    background-color: var(--primary-bg);
+    max-width: 200px;
+    height: 200px;
+    position: relative;
+    top: 700px;
+    left: 60px;
+    margin-bottom: 20px;
+  }
+  .card-title {
+    text-align: center;
+  }
+  #title-skills {
+    text-align: center;
+    position: absolute;
+    top: 285%;
+    left: 45%;
+  }
+  /* SKILLS */
+  /* PROJETOS */
+  #projetos {
+    width: auto;
+    height: auto;
+  }
+  #title-projetos {
+    position: relative;
+    top: 880px;
+    left: -15px;
+    text-align: center;
+  }
+  .card-projetos {
+    position: relative;
+    left: 20%;
+    top: 950px;
+    width: 50%;
+  }
+  .none {
+    display: none;
+  }
+  /* .img-projeto {
+    width: 30%;
+  } */
+  a {
+    text-decoration: none;
+  }
+  .card-icons {
+    background-color: #e20a6f;
+    padding-left: 20px;
+    width: 100px;
+  }
+  /* PROJETOS */
+  /* FOOTER */
+  .footer{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 0%;
+    bottom: -450%;
+    text-align: center;
+  }
+  .img {
+    border-radius: 50%;
+    width: 36%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .position {
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+  }
+  .size {
+    position: absolute;
+    left: 0%;
+    text-align: center;
+  }
+
+  .icons {
+    position: absolute;
+    left: 28%;
+    bottom: 32%;
+  }
+  /* FOOTER */
+
+    
+  }
