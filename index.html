@@ -1,325 +1,287 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Portfólio Vinicios Ziroldo Garbi</title>
-    <style>
-      </style>
+    <meta charset="utf-8">
+    <title>Portfolio - Vinicios Ziroldo Garbi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-<section id="navbar">
-  <nav class="navbar fixed-top gradient-custom-4">
-    <div class="container-fluid">
-      <a class="navbar-brand font-size-titles" href="#"><h5 class="font-size-titles">Vinicios Ziroldo Garbi</h5></a>
-      <!-- <div class="form-check form-switch ">
-        <input class="form-check-input" type="checkbox" role="switch" id="checkbox" onclick="toggle()">
-        <label class="form-check-label font-size-texts" for="checkbox">Dark Mode</label>
-      </div> -->
-      <div class="form-check form-switch form-check-reverse switch-theme">
-        <input class="form-check-input" type="checkbox" id="checkbox" onclick="toggle()">
-        <label class="form-check-label font-size-texts dark-mode-text" for="checkbox">Dark Mode</label>
-      </div>
-    </div>
-  </nav>
-</section>  
-<section id="about-me">
-  <div id="title-about-me">
-    <h2 class="text-color title font-size-titles">Seja Bem-Vindo(a)!</h2>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="card card-about-me box">
-        <img src="assets/about-me.jpeg"  class="img-card" alt="Vinicios Ziroldo Garbi">
-        <div class="card-body">
-          <p class="card-text text-color-preto font-size-texts">Olá, eu me chamo Vinicios.</p>
-        <p class="card-text text-color-preto font-size-texts">Sou desenvolvedor Full Stack.</p>
-        <p class="card-text text-color-preto font-size-texts">Entrei na área a 1 ano e meio e foi amor a primeira vista!</p>
-        <p class="card-text text-color-preto font-size-texts">Amo assistir E-Sports, fazer meus projetos de estudos, fazer um churras com os amigos e jogar gameboard e sair em familia com minha esposa e nossos 2 filhos de quatro patas.</p>
-        <p class="card-text text-color-preto font-size-texts">Ah... e esse ai é o Akamaru meu caçula! 🐶🥰</p>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="left">
-      <a href="Curriculo Vinicios Ziroldo Garbi.pdf" download><img src="assets/curriculo.png" class="curriculo" alt="curriculo"></a>
-      <a href="https://api.whatsapp.com/send?phone=5511998030278&text" target="_blank"><img src="assets/whats.png" class="whatsapp" alt="whatsapp"></a>
-      <div class="linha-vertical-0"></div>
-      <div class="linha-vertical-1"></div>
-      <div class="linha-vertical-2"></div>
-      <div class="linha-vertical-3"></div>
-      <div class="linha-vertical-4"></div>
-      <div class="linha-vertical-5"></div>
-    </div>
-    <div class="right">
-      <a href="https://github.com/ViZiroldo" target="_blank"><img src="assets/git.png" class="git" alt="github"></a>
-      <a href="https://www.linkedin.com/in/vinicios-ziroldo-garbi/" target="_blank"><img src="assets/linkedin.png" class="linkedin" alt="linkedin"></a>
-      <div class="linha-vertical-6"></div>
-      <div class="linha-vertical-7"></div>
-      <div class="linha-vertical-8"></div>
-      <div class="linha-vertical-9"></div>
-      <div class="linha-vertical-10"></div>
-      <div class="linha-vertical-11"></div>
-    </div>
-    <div class="arrow-down">
-      <img src="assets/arrow.png" class="arrow" alt="arrow">
-      <span class="scrolldown font-size-texts"><b>Rolar para baixo</b></span>
-    </div>
-  </div>
-</section>
-      
-<section id="timeline">
-  <div id="title-timeline">
-    <h2 class="text-color title font-size-titles">Time-line</h2>
-  </div>
-  <div class="container py-5">
-    <div class="main-timeline-4 text-white">
-      <div class="timeline-4 left-4">
-        <div class="card gradient-custom">
-          <div class="card-body p-4">
-            <i class="fas fa-brain fa-2x mb-3"></i>
-            <h4 class="text-color-preto font-size-titles">e-Construmarket</h4>
-            <p class="small text-color-preto mb-4 font-size-texts">07/2021 - atual</p>
-            <p class="font-size-texts"><b>Desenvolvedor .Net Jr</b></p>
-            <p class="font-size-texts">Atuação em bugs, atuação em features desenvolvendo melhorias, deploy tanto para o ambiente de HML quanto para o ambiente de PROD.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline-4 right-4">
-        <div class="card gradient-custom-4">
-          <div class="card-body p-4">
-            <i class="fas fa-camera fa-2x mb-3"></i>
-            <h4 class="text-color-preto font-size-titles">JUNIX</h4>
-            <p class="small text-color-preto mb-4 font-size-texts">09/2019 - 07/2021</p>
-            <p class="font-size-texts"><b>Suporte I e Suporte II</b></p>
-            <p class="font-size-texts">Iniciando como suporte, atendendo chamados e dando suporte ao cliente pela plataforma ou presencial.</p>
-            <p class="font-size-texts">Treinamentos presencial da utilização do produto aos clientes.</p>
-            <p class="font-size-texts"><b>Desenvolvedor I</b></p>
-            <p class="font-size-texts">Atuando em Bugs via SQL Server e .Net MVC.</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline-4 left-4">
-        <div class="card gradient-custom">
-          <div class="card-body p-4">
-            <i class="fas fa-campground fa-2x mb-3"></i>
-            <h4 class="text-color-preto font-size-titles">Faculdade Impacta</h4>
-            <p class="small text-color-preto mb-4 font-size-texts">06/2017 - 06/2019</p>
-            <p class="font-size-texts">Formação em Analise e desenvolvimento de sistemas (Bacharelado)</p>
-            <p class="font-size-texts">Formação em Fundamentos de C# (Curso)</p>
-          </div>
-        </div>
-      </div>
-      <div class="timeline-4 right-4">
-        <div class="card gradient-custom-4">
-          <div class="card-body p-4">
-            <i class="fas fa-sun fa-2x mb-3"></i>
-            <h4 class="text-color-preto font-size-titles">VibroLife</h4>
-            <p class="small text-color-preto mb-4 font-size-texts">03/2015 - 09/2019</p>
-            <p class="font-size-texts"><b>Assistente adminstrativo</b></p>
-            <p class="font-size-texts">Cuidar das correspondências, emitir notas fiscais, emitir pedido, dar entrar no estoque, dar saida no estoque, manter arquivos e cadastros atualizados.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-      
-      
-<section id="skills">
-  <div id="title-skills">
-    <h2 class="text-color font-size-titles">Skills</h2>
-  </div>
-  <div class="row justify-content-center">
-    <div class="col-md-3 div-skills">
-      <div class="card card-skills gradient-custom-4">
-        <div class="card-body">
-          <h5 class="card-title font-size-titles">Front-End</h5>
-          <br>
-          <table class="table table-borderless" style="text-align: left;">
-            <tbody>
-              <tr>
-                <td class="text-color-branco font-size-texts">HTML</td>
-                <td class="text-color-branco font-size-texts">JavaScript</td>
-                <td class="text-color-branco font-size-texts">Angular TS</td>
-              </tr>
-              <tr>
-                <td class="text-color-branco font-size-texts">Jquery</td>
-                <td class="text-color-branco font-size-texts">CSS</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 div-skills">
-      <div class="card card-skills gradient-custom-4">
-        <div class="card-body">
-          <h5 class="card-title font-size-titles">Back-End</h5>
-          <br>
-          <table class="table table-borderless" style="text-align: left;">
-            <tbody>
-              <tr>
-                <td class="text-color-branco font-size-texts">.NET CORE</td>
-                <td class="text-color-branco font-size-texts">C#</td>
-                <td class="text-color-branco font-size-texts">SQL Server</td>
-              </tr>
-              <tr>
-                <td class="text-color-branco font-size-texts">ASP Classic</td>
-                <td class="text-color-branco font-size-texts">Entity FrameWork</td>
-                <td class="text-color-branco font-size-texts">Json Web Token</td>
-              </tr>
-              <tr>
-                <td class="text-color-branco font-size-texts">Identity</td>
-                <td class="text-color-branco font-size-texts">Linq</td>
-                <td class="text-color-branco font-size-texts">.NET MVC</td>
-              </tr>
-              <tr>
-                <td class="text-color-branco font-size-texts">Lambda</td>
-                <td class="text-color-branco font-size-texts">AutoMaper</td>
-                <td class="text-color-branco font-size-texts">DDD</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 div-skills">
-      <div class="card card-skills gradient-custom-4">
-        <div class="card-body">
-          <h5 class="card-title font-size-titles">DevOps</h5>
-          <br>
-          <table class="table table-borderless" style="text-align: left;">
-            <tbody>
-              <tr>
-                <td class="text-color-branco font-size-texts">Scrum</td>
-                <td class="text-color-branco font-size-texts">Kanban</td>
-                <td class="text-color-branco font-size-texts">Azure</td>
-              </tr>
-              <tr>
-                <td class="text-color-branco font-size-texts">Git</td>
-                <td class="text-color-branco font-size-texts">TFS</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <!-- Spinner End -->
 
-      
-<section id="projetos">
-  <div>
-    <div id="title-projetos">
-      <h2 class="text-color title font-size-titles">Projetos</h2>
+
+        <!-- Intro Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="line typing-animation text-primary m-0"><i class="fa-solid fa-terminal blinkIcon"></i> Vinicios Ziroldo Garbi</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Olá,<br>Sejá Bem Vindo!</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Me chamo Vinicios Ziroldo Garbi, sou <span class="text-primary">Desenvolvedor Full Stack!</span></p>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/akamaru.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Intro End -->
+
+
+        <!-- Skills Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="skill-item rounded pt-3">
+                            <div class="p-4 h250">
+                                <i class="fa fa-3x fa-code text-primary mb-4"></i>
+                                <h5>Back-End skills</h5>
+                                <p>.NET CORE - .NET MVC - ASP - POO REST - DDD - WEB API - C# - JSON WEB TOKEN - ENTITY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="skill-item rounded pt-3">
+                            <div class="p-4 h250">
+                                <i class="fa-brands fa-3x fa-js text-primary mb-4"></i>
+                                <h5>Front-End Skills</h5>
+                                <p>ANGULAR TS - JQUERY  JAVASCRIPT - HTML - CSS  BOOTSTRAP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="skill-item rounded pt-3">
+                            <div class="p-4 h250">
+                                <i class="fa fa-3x fa-sitemap text-primary mb-4"></i>
+                                <h5>DevOps Skills</h5>
+                                <p>GIT - AZURE - TFS - KANBAN  SCRUM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="skill-item rounded pt-3">
+                            <div class="p-4 h250">
+                                <i class="fa fa-3x fa-database text-primary mb-4"></i>
+                                <h5>DB Skills</h5>
+                                <p>SQL SERVER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Skills End -->
+
+
+        <!-- About Me Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpeg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpeg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpeg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpeg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Sobre mim</h5>
+                        <h2 class="mb-4">Deixe eu falar um pouco sobre mim!</h2>
+                        <p class="mb-4">Tenho 25 anos, sou casado, pai babão de 2 filhinhos (de 4 patas 😍) e Moro em São Paulo capital.</p>
+                        <p class="mb-4">Iniciei minha carreira na área de <span class="text-primary">Tecnologia</span> em 2019 aos 22 anos como suporte I, com 6 meses na área eu já estava como suporte II e fui promovido a equipe de implantação, porem meu desejo sempre foi virar <span class="text-primary">dev</span>.</p>
+                        <p class="mb-4">Em 2021 tive a oportunidade de iniciar minha carreira como <span class="text-primary">dev</span> e foi a melhor escolha que fiz em toda a minha vida profissional, eu amo oque faço e estou sempre buscando evoluir a cada dia!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Me End -->
+
+
+        <!-- Projects Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Meus Projetos!</h5>
+                    <h1 class="mb-5"></h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="project testimonial-item bg-transparent border rounded p-4">
+                        <p>Projeto de gerenciamento de torneios</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid" src="img/tm.jpeg" style="width: 50%;">
+                            <div class="ps-3">
+                                <small>Status: Em andamento</small>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a style="color: black;" href="https://github.com/ViZiroldo/TournamentManager_UI" target="_blank">
+                                    <i class="fa-brands fa-github fa-xl"></i>
+                                    <small>Repositório Front</small>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a style="color: black;" href="https://github.com/ViZiroldo/TournamentManager_ApiCore" target="_blank">
+                                    <i class="fa-brands fa-github fa-xl"></i>
+                                    <small>Repositório API</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project testimonial-item bg-transparent border rounded p-4">
+                        <p>Projeto de gerenciamento financeiro pessoal</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid" src="img/fm.jpeg" style="width: 50%;">
+                            <div class="ps-3">
+                                <small>Status: Na fila</small>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a style="color: black;" href="https://github.com/ViZiroldo/" target="_blank">
+                                    <i class="fa-brands fa-github fa-xl"></i>
+                                    <small>Repositório Front</small>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a style="color: black;" href="https://github.com/ViZiroldo/" target="_blank">
+                                    <i class="fa-brands fa-github fa-xl"></i>
+                                    <small>Repositório API</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project testimonial-item bg-transparent border rounded p-4">
+                        <p>Projeto de ERP Recursos Humanos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid" src="img/rh.jpeg" style="width: 50%;">
+                            <div class="ps-3">
+                                <small>Status: Na fila</small>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a style="color: black;" href="https://github.com/ViZiroldo/" target="_blank">
+                                    <i class="fa-brands fa-github fa-xl"></i>
+                                    <small>Repositório Front</small>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a style="color: black;" href="https://github.com/ViZiroldo/" target="_blank">
+                                    <i class="fa-brands fa-github fa-xl"></i>
+                                    <small>Repositório API</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contato</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>R. Camalotilho - Jardim Eliane - São Paulo - SP</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+55 11 99803-0278</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>ziroldovi@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://api.whatsapp.com/send?phone=5511998030278&text" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="mailto:ziroldovi@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://github.com/ViZiroldo" target="_blank"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/vinicios-ziroldo-garbi/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 text-center">
+                        <p class="mb-2 ">“Não é o mais forte que sobrevive, nem o mais inteligente. Quem sobrevive é o mais disposto à mudança!” – Charles Darwin.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <img class="img-fluid" src="img/vinicios-footer.jpg" style="border-radius: 50%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" style="border-radius: 50%;"><i class="bi bi-arrow-up"></i></a>
     </div>
-  </div>
-  <div class="card card-projetos gradient-custom-4 mb-3">
-    <img src="assets/tm.jpeg" class="img-fluid rounded-start" alt="Tournament Manager">
-    <div class="card-body ">
-      <h5 class="card-title text-color-preto font-size-titles">Tournament Manager</h5>
-      <br>
-      <p class="card-text text-color-branco font-size-texts">Este projeto sera um sistema de gerenciamento de torneios.</p>
-      <p class="card-text text-color-branco font-size-texts">Onde o usuario contratante, consegue informar todas as informações do torneio como por exemplo: nome, valor de premiação, data de inicio, data de encerramento, quantidade de times, e o estilo que vai ocorrer o torneio.</p>
-      <p class="card-text text-color-branco font-size-texts">E os usuarios casuais vão poder visualizar as informações do andamento do torneio.</p>
-      <p class="card-text"><small class="card-text text-color-branco font-size-texts">Sistema em construção! ⚠️</small></p>
-      <br>
-      <div class="row justify-content-center none">
-          <div class="col-sm-3">
-            <a href="https://github.com/ViZiroldo/TournamentManager_ApiCore" target="_blank"> 
-              <div class="card-icons" >
-                <div class="card-body">
-                  <img src="assets/vscode.png" class="img-projeto">
-                </div>
-                <div class="card-body" >
-                    <span class="text-color-preto font-size-texts text-icon" style="position: relative;">Repositório Front-End</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a href="https://github.com/ViZiroldo/TournamentManager_ApiCore" target="_blank">
-              <div class="card-icons">
-                <div class="card-body" >
-                  <img src="assets/vs.png" class="img-projeto">
-                </div>
-                <div class="card-body" >
-                    <span class="text-color-preto font-size-texts text-icon" style="position: relative;">Repositório Back-End</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-3">
-            <a target="_blank">
-              <div class="card-icons">
-                <div class="card-body" >
-                  <img src="assets/browse.png" class="img-projeto">
-                </div>
-                <div class="card-body">
-                  <span class="text-color-preto font-size-texts text-icon" style="position: relative;">Acesso ao Sistema</span>
-                </div>
-              </div>
-            </a>
-          </div>
-      </div>
-    </div>
-  </div>
-</section>
-      
-      
-      
-<div class="footer gradient-custom-4">
-  <footer class="d-flex py-3 my-4" style="text-align:center">
-    <ul class="nav col-md-3 px-2">
-      <div class="position">
-        <li class="nav-item"><img src="assets/vinicios-footer.jpg" class="img"></li>
-      </div>
 
-    </ul>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://kit.fontawesome.com/96b2828718.js" crossorigin="anonymous"></script>
 
-    <ul class="nav col-md-6 justify-content-center">
-      <h6 class="size text-color-preto font-size-titles">“Não é o mais forte que sobrevive, nem o mais inteligente. Quem sobrevive é o mais disposto à mudança!” – Charles Darwin.</h6>
-    </ul>
-    <ul class="nav icons col-md-3 justify-content-center">
-      <li class="nav-item"><a href="https://github.com/ViZiroldo" target="_blank" class="nav-link px-2 text-color-preto"><img src="assets/github-foolder.png"></a></li>
-      <li class="nav-item"><a href="https://www.linkedin.com/in/vinicios-ziroldo-garbi/" target="_blank" class="nav-link px-2 text-color-preto"><img src="assets/linkedin-foolder.png"></a></li>
-      <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=5511998030278&text" target="_blank" class="nav-link px-2 text-color-preto"><img src="assets/whats-foolder.png"></a></li>
-      <li class="nav-item"><a href="mailto:ziroldovi@gmail.com" class="nav-link px-2 text-color-preto" target="_blank" ><img src="assets/email-foolder.png"></a></li>
-    </ul>
-  </footer>
-</div>
-      
-<script>
-    if(localStorage.getItem('theme') == 'dark')
-    {
-        toggle();
-
-        if (document.getElementById('checkbox').checked) {
-            localStorage.setItem('checked', true)
-        }
-    }
-
-    function toggle(){
-        let isDark = document.body.classList.toggle('dark-mode');
-
-        if (isDark){
-          toggle.checked = true;
-          localStorage.setItem('theme', 'dark');
-          document.getElementById('checkbox').setAttribute('checked', 'checked');
-        }
-        else {
-          toggle.checked = true;
-          localStorage.removeItem('theme', 'dark');
-        }
-    }
-</script>      
-<!-- JavaScript Bundle with Popper -->
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
